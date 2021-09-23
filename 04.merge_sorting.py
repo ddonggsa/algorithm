@@ -7,7 +7,6 @@ def merge_sort(arr):
     left1=merge_sort(left)
     right1=merge_sort(right) #더 쪼개줌->재귀함수
     return merge(left1,right1)
-
 def merge(left,right):
     a = 0;
     b = 0;
@@ -27,7 +26,6 @@ def merge(left,right):
           array.append(right[b])
           b+=1
     return array
-
 a = list(map(int,input().split()))
 print(merge_sort(a))
     
