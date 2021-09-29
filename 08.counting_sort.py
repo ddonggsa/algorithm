@@ -1,8 +1,8 @@
 def countingsort(arr,answer,cnt):
     # arr: 입력리스트 anser:  정렬된 리ㅣ스트 cnt: 카운트 리스트
-    for i in tange(len(answer)):
+    for i in range(len(answer)):
         cnt[arr[i]] += 1
-    for i in rannge(1,len(cnt)):
+    for i in range(1,len(cnt)):
         cnt[i] += cnt[i-1]
     for i in range(len(arr)-1,-1,-1):
         answer[cnt[arr[i]]-1] = arr[i]
